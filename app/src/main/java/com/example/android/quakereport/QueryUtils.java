@@ -78,9 +78,8 @@ public final class QueryUtils {
                 // String place = currentEarthquake.optString("place").toString();
                 String place = propetiesJsonobject.getString("place");
 
-                // Extract “time” for time
-                // int time = Integer.parseInt(currentEarthquake.optString("time").toString());
-                String time = propetiesJsonobject.getString("time");
+                // Extract the value for the key called "time"
+                long time = propetiesJsonobject.getLong("time");
 
                 // Create Earthquake java object from magnitude, location, and time
                 Earthquake earthquake = new Earthquake(mag, place, time);
