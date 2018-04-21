@@ -72,7 +72,8 @@ public final class QueryUtils {
                 // videos explains for now we just extract the value as strings
                 // because we're just displaying them straight to the screen,
                 // and not doing any additional calculation or formatting on them
-                String mag = propetiesJsonobject.getString("mag");
+                double mag = propetiesJsonobject.getDouble("mag");
+
 
                 // Extract “place” for location
                 // String place = currentEarthquake.optString("place").toString();
